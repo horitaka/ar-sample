@@ -10,6 +10,12 @@
         <a-asset-item id="santa-obj" src="model/santa/santa.obj"></a-asset-item>
         <a-asset-item id="santa-mtl" src="model/santa/santa.mtl"></a-asset-item>
         <a-asset-item id="thinker" src="model/thinker/thinker.glb"></a-asset-item>
+        <a-asset-item id="bridge-obj" src="model/bridge/bridge.obj"></a-asset-item>
+        <a-asset-item id="bridge-mtl" src="model/bridge/bridge.mtl"></a-asset-item>
+        <a-asset-item id="moon-obj" src="model/moon/moon.obj"></a-asset-item>
+        <a-asset-item id="moon-mtl" src="model/moon/moon.mtl"></a-asset-item>
+        <a-asset-item id="plant-obj" src="model/plant/plant.obj"></a-asset-item>
+        <a-asset-item id="plant-mtl" src="model/plant/plant.mtl"></a-asset-item>
       </a-assets>
 
       <a-marker preset="hiro">
@@ -27,6 +33,18 @@
         </a-sphere> -->
         <a-obj-model id="santa" src="#santa-obj" mtl="#santa-mtl" position="0 0 0" scale="0.5 0.5 0.5" rotation="0 0 0" link="href: https://qiita.com/nonkapibara; title: nonkapibara;"></a-obj-model>
         <a-text value="Hello YouTube！!！" position="0 1.3 0" align="center"></a-text>
+      </a-marker>
+
+      <a-marker id='marker-bridge' type='pattern' url='./marker/bridge.patt'>
+        <a-obj-model id="bridge" src="#bridge-obj" mtl="#bridge-mtl" position="0 0 0" scale="0.5 0.5 0.5" rotation="0 0 0" link="href: https://qiita.com/nonkapibara; title: nonkapibara;"></a-obj-model>
+      </a-marker>
+
+      <a-marker id='marker-moon' type='pattern' url='./marker/moon.patt'>
+        <a-obj-model id="moon" src="#moon-obj" mtl="#moon-mtl" position="0 0 0" scale="0.5 0.5 0.5" rotation="0 0 0" link="href: https://qiita.com/nonkapibara; title: nonkapibara;"></a-obj-model>
+      </a-marker>
+
+      <a-marker id='marker-plant' type='pattern' url='./marker/plant.patt'>
+        <a-obj-model id="plant" src="#plant-obj" mtl="#plant-mtl" position="0 0 0" scale="0.5 0.5 0.5" rotation="0 0 0" link="href: https://qiita.com/nonkapibara; title: nonkapibara;"></a-obj-model>
       </a-marker>
 
       <a-entity camera></a-entity>
