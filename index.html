@@ -12,11 +12,22 @@
         <!-- <a-asset-item id="thinker" src="model/thinker/thinker.glb"></a-asset-item> -->
         <!-- <a-asset-item id="bridge-obj" src="model/bridge/bridge.obj"></a-asset-item> -->
         <!-- <a-asset-item id="bridge-mtl" src="model/bridge/bridge.mtl"></a-asset-item> -->
-        <a-asset-item id="moon-obj" src="model/moon/Moon 2K.obj"></a-asset-item>
-        <a-asset-item id="moon-mtl" src="model/moon/Moon 2K.mtl"></a-asset-item>
-        <a-asset-item id="plant-obj" src="model/plant/indoor plant_02.obj"></a-asset-item>
-        <a-asset-item id="plant-mtl" src="model/plant/indoor plant_02.mtl"></a-asset-item>
+        <!-- <a-asset-item id="moon-obj" src="model/moon/Moon 2K.obj"></a-asset-item> -->
+        <!-- <a-asset-item id="moon-mtl" src="model/moon/Moon 2K.mtl"></a-asset-item> -->
+        <!-- <a-asset-item id="plant-obj" src="model/plant/indoor plant_02.obj"></a-asset-item> -->
+        <!-- <a-asset-item id="plant-mtl" src="model/plant/indoor plant_02.mtl"></a-asset-item> -->
       </a-assets>
+
+      <a-marker id='marker-shikaku' type='pattern' url='./marker/shikaku.patt'>
+        <a-box position='0 0.5 0' material='color: yellow;' link="href: https://qiita.com/nonkapibara; title: nonkapibara;"></a-box>
+      </a-marker>
+
+      <a-marker id='marker-maru' type='pattern' url='./marker/maru.patt'>
+        <a-sphere scale=".25 .25 .25" position="0 .5 0" color="#f00" link="href: https://qiita.com/nonkapibara; title: nonkapibara;">
+          <a-animation attribute="position" to="0 1 0" direction="alternate" dur="2000" repeat="indefinite">
+          </a-animation>
+        </a-sphere>
+      </a-marker>
 
       <!-- <a-marker preset="hiro">
         <a-box position='0 0.5 0' material='color: yellow;'></a-box>
@@ -35,13 +46,13 @@
         <a-obj-model id="bridge" src="#bridge-obj" mtl="#bridge-mtl" position="0 0 0" scale="0.5 0.5 0.5" rotation="0 0 0" link="href: https://qiita.com/nonkapibara; title: nonkapibara;"></a-obj-model>
       </a-marker> -->
 
-      <a-marker id='marker-moon' type='pattern' url='./marker/moon.patt'>
+      <!-- <a-marker id='marker-moon' type='pattern' url='./marker/moon.patt'>
         <a-obj-model id="moon" src="#moon-obj" mtl="#moon-mtl" position="0 0 0" scale="0.5 0.5 0.5" rotation="0 0 0" link="href: https://qiita.com/nonkapibara; title: nonkapibara;"></a-obj-model>
-      </a-marker>
+      </a-marker> -->
 
-      <a-marker id='marker-plant' type='pattern' url='./marker/plant.patt'>
+      <!-- <a-marker id='marker-plant' type='pattern' url='./marker/plant.patt'>
         <a-obj-model id="plant" src="#plant-obj" mtl="#plant-mtl" position="0 0 0" scale="0.5 0.5 0.5" rotation="0 0 0" link="href: https://qiita.com/nonkapibara; title: nonkapibara;"></a-obj-model>
-      </a-marker>
+      </a-marker> -->
 
       <a-entity camera></a-entity>
     </a-scene>
