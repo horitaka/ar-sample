@@ -5,7 +5,7 @@
 <script src="https://rawgit.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-click-events/events.js"></script>
 
   <body style='margin : 0px; overflow: hidden;'>
-    <a-scene embedded arjs="debugUIEnabled:false;">
+    <a-scene embedded arjs>
       <a-assets>
         <a-asset-item id="santa-obj" src="model/santa/santa.obj"></a-asset-item>
         <a-asset-item id="santa-mtl" src="model/santa/santa.mtl"></a-asset-item>
@@ -13,8 +13,8 @@
       </a-assets>
 
       <a-marker preset="hiro">
-        <!-- <a-box position='0 0.5 0' material='color: yellow;'></a-box> -->
-        <a-entity gltf-model="#thinker" scale="0.5 0.5 0.5" position="0 1.8 0" rotation="0 0 0"
+        <a-box position='0 0.5 0' material='color: yellow;'></a-box>
+        <a-entity gltf-model="#thinker" scale="0.5 0.5 0.5" position="0 0 0" rotation="0 0 0"
            link="href: https://www.yahoo.co.jp; title: nonkapibara; image: #thinker"
            animation-mixer="loop:repeat">
         </a-entity>
